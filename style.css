@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, section, footer {
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.team-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.team-card h3 {
+  margin: 10px 0;
+}
+
+.team-card p {
+  color: #777;
+}
+In this example, the webpage includes sections for administration, teachers, and support staff. You can add more sections as needed, such as for different departments, committees, or even student organizations. Customize the content with actual names and roles within your school. You can further enhance the webpage with additional features, such as clickable email addresses for contacts or profile images for faculty members and staff.
+
+
+
+
+
