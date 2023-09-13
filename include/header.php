@@ -77,8 +77,8 @@ if (file_exists('../../model/query.php')) {
 			<div class="topbar-right">
 				<ul>
 					<li><a href="https://app.crsm.ng">Portal</a></li>
-					<li><a href="https://mail.crsm.ng">Staff Mail</a></li>
-					<li><a href="https://app.crsm.ng/console">Admin</a></li>
+					<li><a href="https://mailapp.crsm.ng">Staff Mail</a></li>
+					<li><a href="https://portal.crsm.ng/manager">Admin</a></li>
 				</ul><!-- ul -->
 			</div><!--topbar-right-->
 		</div><!-- topbar-inner -->

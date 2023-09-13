@@ -57,14 +57,14 @@ educational arm of the mission.</p>
 						</div><!-- history-card-meta -->
 						<div class="history-card-option"></div><!-- history-card-option -->
 						<div class="history-card-image">
-							<img src="getty-removebg-preview.png" class="img-fluid" width="250" alt="img-25">
+							<img src="./assets/image/curriculum/getty-removebg-preview.png" class="img-fluid" width="250" alt="img-25">
 						</div><!-- history-card-image -->
 					</div><!-- history-card-item -->
 				</div><!-- history-card-list -->
 				<div class="history-card-list">
 					<div class="history-card-item">
 						<div class="history-card-image">
-							<img src="bookss.png" class="img-fluid" width="250" alt="img-27">
+							<img src="./assets/image/curriculum/bookss.png" class="img-fluid" width="250" alt="img-27">
 						</div><!-- history-card-image -->
 						<div class="history-card-meta">
 							<div class="history-card-years">1982</div>
@@ -96,7 +96,7 @@ Schools in different parts of Nigeria and abroad.</p>
 						</div><!-- history-card-meta -->
 						<div class="history-card-option"></div><!-- history-card-option -->
 						<div class="history-card-image">
-							<img src="images_2.png" class="img-fluid" width="250" alt="img-28">
+							<img src="./assets/image/events/images_2.png" class="img-fluid" width="250" alt="img-28">
 						</div><!-- history-card-image -->
 					</div><!-- history-card-item -->
 				</div><!-- history-card-list -->

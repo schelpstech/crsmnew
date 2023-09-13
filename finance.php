@@ -8,8 +8,8 @@ include "./include/header.php"
 				<div class="col-12 col-lg-6">
 					<div class="team-details-image">
 						<img src="./assets/image/board/personal.png" class="img-fluid" alt="img-93" width="500">
-                        <img src="./assets/image/Evalution&training/images4.png" class="img-fluid" alt="img-93" width="500">
-                        <img src="./assets/image/Evalution&training/finances.png" class="img-fluid" alt="img-93" width="500">
+                        <img src="./assets/image/evalution&training/images4.png" class="img-fluid" alt="img-93" width="500">
+                        <img src="./assets/image/evalution&training/finances.png" class="img-fluid" alt="img-93" width="500">
 						<div class="team-details-name">Finance</div>
 					</div><!--team-details-image-->
 				</div><!--col-12 col-lg-6-->
