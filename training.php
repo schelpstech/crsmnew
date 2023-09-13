@@ -12,7 +12,7 @@ include "./include/header.php"
                             <h2 class="section-title">Meet our Committees</h2>
                         
                             <div class="team-details-image">
-						<img src="./assets/image/evalution&training/trainingremove.png" class="img-fluid" alt="img-93" width="500">
+						<img src="./assets/image/training/trainingremove.png" class="img-fluid" alt="img-93" width="500">
                        
 						<div class="team-details-name">Training</div>
                         </div><!-- row -->

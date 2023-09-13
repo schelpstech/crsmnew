@@ -231,7 +231,7 @@ include "./include/header.php"
 							</div> <!--col-12 col-lg-6 -->
 							<div class="col-12 col-lg-6">
 								<label>Select LGA</label>
-								<select type="text" class="input-text" placeholder="State"  name="lga_type" required="yes" id="lga_type"
+								<select type="text" class="input-text" placeholder="LGA"  name="lga_type" required="yes" id="lga_type"
 									aria-required="true">
 								</select>
 							</div> <!--col-12 col-lg-6 -->
