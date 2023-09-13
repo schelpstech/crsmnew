@@ -202,11 +202,11 @@ include "./include/header.php"
 					</div><!-- contact-box -->
 				</div><!-- col-lg-4 -->
 				<div class="col-lg-8">
-					<form action="assets/inc/sendemail.php" class="contact-form  contact-form-validated" method="post">
+					<form action="./app/directory.php" class="contact-form  contact-form-validated" method="post">
 						<div class="row row-gutter-10">
 							<div class="col-12 col-lg-6">
 								<label>Select Country</label>
-								<select type="text" class="input-text" id="country_type"
+								<select type="text" class="input-text" id="country_type" required="yes"
 									onchange="select_region_type();">
 									<option value="">select</option>
 									<?php
@@ -219,30 +219,37 @@ include "./include/header.php"
 							</div> <!--col-12 col-lg-6 -->
 							<div class="col-12 col-lg-6">
 								<label>Select Region</label>
-								<select type="text" class="input-text" id="region_type" onchange="select_state_type();">
+								<select type="text" class="input-text" id="region_type" onchange="select_state_type();" required="yes">
 									<option value="">select</option>
 								</select>
 							</div> <!--col-12 col-lg-6 -->
 							<div class="col-12 col-lg-6">
 								<label>Select State</label>
-								<select type="text" class="input-text" placeholder="State" id="state_type" onchange="select_lga_type();"
+								<select type="text" class="input-text" placeholder="State" id="state_type" required="yes" onchange="select_lga_type();"
 									aria-required="true">
 								</select>
 							</div> <!--col-12 col-lg-6 -->
 							<div class="col-12 col-lg-6">
 								<label>Select LGA</label>
-								<select type="text" class="input-text" placeholder="State"  name="lga_type" id="lga_type"
+								<select type="text" class="input-text" placeholder="State"  name="lga_type" required="yes" id="lga_type"
 									aria-required="true">
 								</select>
 							</div> <!--col-12 col-lg-6 -->
-							<div class="col-12 col-lg-6">
-								<label>Select School type</label>
-								<select type="text" class="input-text" placeholder="State"  name="school_type" id="school_type"
+							<div class="col-12 col-lg-6" hidden>
+								<label>Select LGA</label>
+								<select type="text" class="input-text"  name="searhToken" 
 									aria-required="true">
+									<option selected value="
+									<?php 
+									$searchToken = $utility->generateRandomDigits(14);
+									$_SESSION['searchToken'] = $searchToken;
+									echo base64_encode($searchToken); 
+									?>"> </option>
 								</select>
 							</div> <!--col-12 col-lg-6 -->
+							
 							<div class="col-12 col-lg-12 offset-4">
-								<button class="btn btn-primary">Search School</button>
+								<button type="submit" name="searchSchools" class="btn btn-primary">Search School</button>
 							</div><!-- col-12 col-lg-12 -->
 						</div><!-- row -->
 					</form><!-- contact-form -->
