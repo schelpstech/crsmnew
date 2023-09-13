@@ -529,7 +529,7 @@ include "./include/header.php"
 					<div class="blog-card">
 						<div class="blog-card-image">
 							<img src="assets/image/events/band.jpg" class="img-fluid" alt="img-22">
-							<li><a href="news&events.php">news&events</a></li>
+							<li><a href="news.php">news</a></li>
 						</div><!-- blog-card-image -->
 						<div class="blog-card-date">
 							<a href="news-details.html">10 SEPTEMBER 2023</a>
@@ -552,7 +552,7 @@ include "./include/header.php"
 					<div class="blog-card">
 						<div class="blog-card-image">
 							<img src="assets/image/events/class.jpg" class="img-fluid" alt="img-23">
-							<li><a href="news&events.php">news&events</a></li>
+							<li><a href="news.php">news</a></li>
 						</div><!-- blog-card-image -->
 						<div class="blog-card-date">
 							<a href="news-details.html">01 SEPTEMBER 2023</a>
@@ -575,7 +575,7 @@ include "./include/header.php"
 					<div class="blog-card">
 						<div class="blog-card-image">
 							<img src="assets/image/events/band.jpg" class="img-fluid" alt="img-24">
-							<li><a href="news&events.php">news&events</a></li>
+							<li><a href="news.php">news</a></li>
 						</div><!-- blog-card-image -->
 						<div class="blog-card-date">
 							<a href="news-details.html">10 SEPTEMBER 2023</a>

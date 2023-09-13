@@ -45,19 +45,6 @@
   
 </style>
 <div class="page-wrapper">
-    <section class="page-banner">
-        <div class="container">
-            <div class="page-breadcrumbs">
-                <ul class="list-unstyled">
-                    <li><a href="index.php">Home</a></li>
-                    <li>CRSM Gallery</li>
-                </ul><!-- list-unstyled -->
-            </div><!-- page-breadcrumbs -->
-            <div class="page-banner-title">
-                <h3>Gallery</h3>
-            </div><!-- page-banner-title -->
-        </div><!-- container -->
-    </section><!--page-banner-->
 </head>
 <body>
 

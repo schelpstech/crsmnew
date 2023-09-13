@@ -2,20 +2,6 @@
 	include "./include/header.php"
 ?>
 <div class="page-wrapper">
-	<section class="page-banner">
-
-		<div class="container">
-			<div class="page-breadcrumbs">
-				<ul class="list-unstyled">
-					<li><a href="index.html">Home</a></li>
-					<li>Faq</li>
-				</ul><!-- list-unstyled -->
-			</div><!-- page-breadcrumbs -->
-			<div class="page-banner-title">
-				<h3>Faq</h3>
-			</div><!-- page-banner-title -->
-		</div>	<!-- container -->		
-	</section><!--page-banner-->
 	<section class="department-details-section">
 		<div class="container">
 			<div class="row">
