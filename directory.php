@@ -20,7 +20,8 @@ include "./include/header.php";
 						<div class="col-lg-4">
 							<div class="blog-card">
 								<div class="blog-card-image">
-									<img src="http://portal.crsm.ng<?php echo substr($data["schLogo"],2) ?? ""; ?>" class="img-fluid" alt="<?php echo $data["sch_code"] ?? ""; ?>">
+									<img src="http://portal.crsm.ng<?php echo substr($data["schLogo"],2) ?? ""; ?>" class="img-fluid" alt="<?php echo $data["sch_code"] ?? ""; ?>" 
+									style="height: 50%; width:50%;  display: block; margin-left: auto;margin-right: auto; "  >
 								
 								</div><!-- blog-card-image -->
 								<div class="blog-card-date">
@@ -39,7 +40,7 @@ include "./include/header.php";
                                             <p>Address: </p>
                                         </div>
                                         <div  class="col-12 col-lg-8">
-                                            <p><?php echo ucfirst($data["address"]) ?? ""; ?></p>
+                                            <small><?php echo ucfirst($data["address"]) ?? ""; ?></small>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -47,7 +48,7 @@ include "./include/header.php";
                                             <p>Location: </p>
                                         </div>
                                         <div  class="col-12 col-lg-8">
-                                            <p><?php echo ucfirst($data["lga"].", ".$data["state"].", ".$data["country"]) ?? ""; ?></p>
+                                            <small><?php echo ucfirst($data["lga"].", ".$data["state"].", ".$data["country"]) ?? ""; ?></small>
                                         </div>
                                     </div>
                                     <div class="row">
