@@ -10,7 +10,6 @@ if (isset($_POST['searchSchools'])
     $_SESSION['lga_type'] = htmlspecialchars($_POST['lga_type']);
     $model->redirect('../directory.php'); 
 }else{
-    echo $_POST['searchToken'];
     $model->redirect('../index.php'); 
     
 }
