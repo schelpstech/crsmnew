@@ -5,7 +5,7 @@ include "./include/header.php"
 	<section class="main-slider">
 		<div class="main-slider-swiper owl-carousel owl-theme">
 			<div class="item">
-			<div class="item-slider-bg" style="background-image: url(assets/image/bg/churchschool.jpg); opacity: 1;"></div>
+				<div class="item-slider-bg" style="background-image: url(assets/image/bg/churchschool.jpg); opacity: 1;"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
@@ -189,74 +189,68 @@ include "./include/header.php"
 				</div><!--col-lg-6-->
 
 				<section class="contact-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="contact-box">
-						<div class="section-tagline">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="contact-box">
+									<div class="section-tagline">
 
-						</div><!-- section-tagline -->
-						<h1 class="section-title">School Directory</h1>
-						<p> It serves as a valuable resource for users, allowing them to easily access school
-							contact details, other relevant information. </p>
-					</div><!-- contact-box -->
-				</div><!-- col-lg-4 -->
-				<div class="col-lg-8">
-					<form action="./app/directory.php" class="contact-form  contact-form-validated" method="post">
-						<div class="row row-gutter-10">
-							<div class="col-12 col-lg-6">
-								<label>Select Country</label>
-								<select type="text" class="input-text" id="country_type" required="yes"
-									onchange="select_region_type();">
-									<option value="">select</option>
-									<?php
-									$option = $model->select_all('country_tbl');
-									foreach ($option as $data) {
-										echo '<option value="' . $data['country_id'] . '">' . $data['country'] . '</option>';
-									}
-									?>
-								</select>
-							</div> <!--col-12 col-lg-6 -->
-							<div class="col-12 col-lg-6">
-								<label>Select Region</label>
-								<select type="text" class="input-text" id="region_type" onchange="select_state_type();" required="yes">
-									<option value="">select</option>
-								</select>
-							</div> <!--col-12 col-lg-6 -->
-							<div class="col-12 col-lg-6">
-								<label>Select State</label>
-								<select type="text" class="input-text" placeholder="State" id="state_type" required="yes" onchange="select_lga_type();"
-									aria-required="true">
-								</select>
-							</div> <!--col-12 col-lg-6 -->
-							<div class="col-12 col-lg-6">
-								<label>Select LGA</label>
-								<select type="text" class="input-text" placeholder="State"  name="lga_type" required="yes" id="lga_type"
-									aria-required="true">
-								</select>
-							</div> <!--col-12 col-lg-6 -->
-							<div class="col-12 col-lg-6" hidden>
-								<label>Select LGA</label>
-								<select type="text" class="input-text"  name="searhToken" 
-									aria-required="true">
-									<option selected value="
-									<?php 
-									$searchToken = $utility->generateRandomDigits(14);
-									$_SESSION['searchToken'] = $searchToken;
-									echo base64_encode($searchToken); 
-									?>"> </option>
-								</select>
-							</div> <!--col-12 col-lg-6 -->
-							
-							<div class="col-12 col-lg-12 offset-4">
-								<button type="submit" name="searchSchools" class="btn btn-primary">Search School</button>
-							</div><!-- col-12 col-lg-12 -->
+									</div><!-- section-tagline -->
+									<h1 class="section-title">School Directory</h1>
+									<p> It serves as a valuable resource for users, allowing them to easily access school
+										contact details, other relevant information. </p>
+								</div><!-- contact-box -->
+							</div><!-- col-lg-4 -->
+							<div class="col-lg-8">
+								<form action="./app/directory.php" class="contact-form" method="post">
+									<div class="row row-gutter-10">
+										<div class="col-12 col-lg-6">
+											<label>Select Country</label>
+											<select type="text" class="input-text" id="country_type" required="yes" onchange="select_region_type();">
+												<option value="">select</option>
+												<?php
+												$option = $model->select_all('country_tbl');
+												foreach ($option as $data) {
+													echo '<option value="' . $data['country_id'] . '">' . $data['country'] . '</option>';
+												}
+												?>
+											</select>
+										</div> <!--col-12 col-lg-6 -->
+										<div class="col-12 col-lg-6">
+											<label>Select Region</label>
+											<select type="text" class="input-text" id="region_type" onchange="select_state_type();" required="yes">
+												<option value="">select</option>
+											</select>
+										</div> <!--col-12 col-lg-6 -->
+										<div class="col-12 col-lg-6">
+											<label>Select State</label>
+											<select type="text" class="input-text" placeholder="State" id="state_type" required="yes" onchange="select_lga_type();" aria-required="true">
+											</select>
+										</div> <!--col-12 col-lg-6 -->
+										<div class="col-12 col-lg-6">
+											<label>Select LGA</label>
+											<select type="text" class="input-text" placeholder="State" name="lga_type" required="yes" id="lga_type" aria-required="true">
+											</select>
+										</div> <!--col-12 col-lg-6 -->
+										<div class="col-12 col-lg-6" hidden>
+											<select type="text" class="input-text" name="searchToken" aria-required="true">
+												<option selected value="<?php
+																		$searchToken = $utility->generateRandomDigits(14);
+																		$_SESSION['searchToken'] = $searchToken;
+																		echo base64_encode($searchToken);
+																		?>"> </option>
+											</select>
+										</div> <!--col-12 col-lg-6 -->
+
+										<div class="col-12 col-lg-12 offset-4">
+											<button type="submit" name="searchSchools" class="btn btn-primary">Search School</button>
+										</div><!-- col-12 col-lg-12 -->
+									</div><!-- row -->
+								</form><!-- contact-form -->
+							</div><!-- col-lg-8 -->
 						</div><!-- row -->
-					</form><!-- contact-form -->
-				</div><!-- col-lg-8 -->
-			</div><!-- row -->
-		</div><!-- container -->
-	</section><!-- contact-section -->
+					</div><!-- container -->
+				</section><!-- contact-section -->
 
 			</div><!-- row -->
 		</div><!-- container -->
@@ -282,12 +276,12 @@ include "./include/header.php"
 							</a><!-- video-popup -->
 						</div><!-- service-card-video -->
 						<ul class="list-unstyled"><strong>
-							<li><a href="https://portal.crsm.ng">Teacher's training  <i class="fa-solid fa-chevron-right"></i></a></li>
-							<li><a href="https://portal.crsm.ng">Jesus time report <i class="fa-solid fa-chevron-right"></i></a></li>
-							<li><a href="https://portal.crsm.ng">Timely academic performance report<i class="fa-solid fa-chevron-right"></i></a></li>
-							<li><a href="https://portal.crsm.ng">2% Remitance filing <i class="fa-solid fa-chevron-right"></i></a></li>
-							<li><a href="https://portal.crsm.ng">School facility update<i class="fa-solid fa-chevron-right"></i></a></li>
-							<li><a href="https://portal.crsm.ng">CRSM Job board<i class="fa-solid fa-chevron-right"></i></a></li>
+								<li><a href="https://portal.crsm.ng">Teacher's training <i class="fa-solid fa-chevron-right"></i></a></li>
+								<li><a href="https://portal.crsm.ng">Jesus time report <i class="fa-solid fa-chevron-right"></i></a></li>
+								<li><a href="https://portal.crsm.ng">Timely academic performance report<i class="fa-solid fa-chevron-right"></i></a></li>
+								<li><a href="https://portal.crsm.ng">2% Remitance filing <i class="fa-solid fa-chevron-right"></i></a></li>
+								<li><a href="https://portal.crsm.ng">School facility update<i class="fa-solid fa-chevron-right"></i></a></li>
+								<li><a href="https://portal.crsm.ng">CRSM Job board<i class="fa-solid fa-chevron-right"></i></a></li>
 							</strong></ul><!-- list-unstyled -->
 						<div class="service-button">
 							<a href="https://portal.crsm.ng" class="btn btn-primary">Discover More</a>
@@ -397,7 +391,7 @@ include "./include/header.php"
 								<p>Foster a desire to please God as a primary life goal.</p>
 							</li><!-- li -->
 							<li>
-								<i class="fa-solid fa-circle-check"></i> 
+								<i class="fa-solid fa-circle-check"></i>
 								<p>Foster faithfulness in spirit and loyalty to God, and our Lord Jesus Christ.</p>
 							</li><!-- li -->
 							<li>
@@ -411,7 +405,7 @@ include "./include/header.php"
 					<div class="mayor-img">
 						<img src="assets/image/shapes/shape-1.png" class="floated-image-one" alt="img-7">
 						<img src="assets/image/board/board.jpg" alt="img-8">
-						
+
 					</div><!--mayor-img-->
 				</div><!--col-lg-6"-->
 			</div><!-- row -->
@@ -432,8 +426,8 @@ include "./include/header.php"
 				</div><!--item-->
 				<div class="item">
 					<img src="CRSM.jpg" class="img-fluid" alt="img-16">
-					</div><!--item-->
-					<div class="item">
+				</div><!--item-->
+				<div class="item">
 					<img src="assets/image/testimonial/RU.png" class="img-fluid" alt="img-16">
 				</div><!--item-->
 			</div><!--client-carousel owl-carousel owl-theme-->
@@ -505,7 +499,7 @@ include "./include/header.php"
 				<div class="testimonial-thumb">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-						
+
 							<i class="fa-solid fa-quote-left"></i>
 						</div><!-- swiper-slide -->
 						<div class="swiper-slide">
@@ -521,8 +515,8 @@ include "./include/header.php"
 			</div><!--testimonial-slider-->
 		</div><!-- container -->
 	</section><!--testimonial-section-->
-	
-	
+
+
 	<section class="blog-section">
 		<div class="container">
 			<div class="blog-box">
