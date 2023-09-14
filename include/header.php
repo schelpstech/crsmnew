@@ -138,11 +138,7 @@ if (file_exists('../../model/query.php')) {
 					<span></span>
 					<span></span>
 				</div><!-- mobile-menu-button -->
-				<div class="search-box">
-					<a href="#" class="search-toggler">
-						<i class="flaticon-search-interface-symbol"></i>
-					</a><!-- search-toggler -->
-				</div><!-- search-box -->
+				
 				<div class="main-menu-right-button">
 					<a href="contact.html" class="btn btn-primary">Report Issue</a>
 				</div><!-- main-menu-right-button -->

@@ -85,7 +85,7 @@
             <span></span>
         </a><!-- mobile-nav-close -->
         <div class="logo-box">
-            <a href="index.html"><img src="crsm.png" width="160" height="40" alt="26"></a>
+            <a href="index.html"><img src="./assets/image/logo/crsmlogo.png" width="160" height="40" alt="26"></a>
         </div><!-- logo-box -->
         <div class="mobile-nav-container"></div><!-- mobile-nav-container -->
         <ul class="mobile-nav-contact list-unstyled">
@@ -95,11 +95,15 @@
             </li><!-- li -->
             <li>
                 <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                <a href="mailto:contactdesk@crsm.ng">contactdesk@crsm.ng</a>
             </li><!-- li -->
             <li>
                 <i class="fa-solid fa-map-marker-alt"></i>
-                88 Broklyn Golden Road Street <br> New York. USA
+                <p>The CRSM Secretariat,<br>
+                                Km 46, The Redemption Camp,<br>
+                                Lagos - Ibadan Express Road.<br>
+                                Ogun state. 
+                                Nigeria.</p>
             </li><!-- li -->
         </ul><!-- mobile-nav-contact -->
         <ul class="mobile-nav-social list-unstyled">
