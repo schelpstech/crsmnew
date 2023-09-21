@@ -31,10 +31,10 @@ if (file_exists('../../model/query.php')) {
 	<link rel="stylesheet" href="assets/vendor/youtube-popup/youtube-popup.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- favicons Icons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="CRSM.jpg">
-	<link rel="icon" type="image/png" sizes="32x32" href="CRSM.jpg">
-	<link rel="icon" type="image/png" sizes="16x16" href="CRSM.jpg">
-	<link rel="manifest" href="rccg logo.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://press.crsm.ng/wp-content/uploads/2023/09/crsmlogo-e1695291878191.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://press.crsm.ng/wp-content/uploads/2023/09/crsmlogo-e1695291878191.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://press.crsm.ng/wp-content/uploads/2023/09/crsmlogo-e1695291878191.png">
+	<link rel="manifest" href="https://press.crsm.ng/wp-content/uploads/2023/09/crsmlogo-e1695291878191.png">
 </head>
 <body>
 <div id="pre-loader">
