@@ -125,13 +125,11 @@ include "./include/header.php"
 				</div><!-- row -->
 			</div><!--department-section-inner-->
 		</div><!-- container -->
-
 	</section><!--department-section-->
 	<section class="about-section">
 		<div class="container">
 			<div class="row justify-content-between">
-
-				<div class="col-lg-6">
+				<div class="col-lg-7">
 					<div class="about-inner">
 						<div class="section-title-box">
 							<div class="section-tagline">Chairperson's Address</div><!-- section-tagline -->
@@ -170,13 +168,14 @@ include "./include/header.php"
 						</div><!--about-author-box-->
 					</div><!-- about-inner -->
 				</div><!--col-lg-6-->
-
-				<div class="col-lg-6">
+				<div class="col-lg-5">
 					<div class="about-image">
+
 						<div class="about-image-inner img-one">
-							<img src="assets/image/home/mama.png" height="350" class="img-fluid" alt="img-2">
 							<div class="sign-text"><small style="color:black;">Pst mrs Folu Adeboye</small></div><!-- sign-text -->
-							<img src="assets/image/home/mamaa.png" height="350" class="img-fluid" alt="img-2">
+							<br><br><br><br><br><br>
+							<img src="assets/image/home/mamaa.png" height="350" class="img-fluid" alt="img-2"><br><br><br>
+							<div class="sign-text"><small style="color:black;">Pst mrs Folu Adeboye</small></div><!-- sign-text -->
 							<div class="about-image-caption">
 								<div class="about-image-caption-inner">
 									<span class="about-caption-number"><?php echo date('Y') - 1982; ?></span>
@@ -187,74 +186,72 @@ include "./include/header.php"
 
 					</div><!--about-image-->
 				</div><!--col-lg-6-->
+			</div>
+		</div>
+	</section>
+	<section class="contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="contact-box">
+						<div class="section-tagline">
 
-				<section class="contact-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4">
-								<div class="contact-box">
-									<div class="section-tagline">
+						</div><!-- section-tagline -->
+						<h1 class="section-title">School Directory</h1>
+						<p> It serves as a valuable resource for users, allowing them to easily access school
+							contact details, other relevant information. </p>
+					</div><!-- contact-box -->
+				</div><!-- col-lg-4 -->
+				<div class="col-lg-8">
+					<form action="./app/directory.php" class="contact-form" method="post">
+						<div class="row row-gutter-10">
+							<div class="col-12 col-lg-6">
+								<label>Select Country</label>
+								<select type="text" class="input-text" id="country_type" required="yes" onchange="select_region_type();">
+									<option value="">select</option>
+									<?php
+									$option = $model->select_all('country_tbl');
+									foreach ($option as $data) {
+										echo '<option value="' . $data['country_id'] . '">' . $data['country'] . '</option>';
+									}
+									?>
+								</select>
+							</div> <!--col-12 col-lg-6 -->
+							<div class="col-12 col-lg-6">
+								<label>Select Region</label>
+								<select type="text" class="input-text" id="region_type" onchange="select_state_type();" required="yes">
+									<option value="">select</option>
+								</select>
+							</div> <!--col-12 col-lg-6 -->
+							<div class="col-12 col-lg-6">
+								<label>Select State</label>
+								<select type="text" class="input-text" placeholder="State" id="state_type" required="yes" onchange="select_lga_type();" aria-required="true">
+								</select>
+							</div> <!--col-12 col-lg-6 -->
+							<div class="col-12 col-lg-6">
+								<label>Select LGA</label>
+								<select type="text" class="input-text" placeholder="State" name="lga_type" required="yes" id="lga_type" aria-required="true">
+								</select>
+							</div> <!--col-12 col-lg-6 -->
+							<div class="col-12 col-lg-6" hidden>
+								<select type="text" class="input-text" name="searchToken" aria-required="true">
+									<option selected value="<?php
+															$searchToken = $utility->generateRandomDigits(14);
+															$_SESSION['searchToken'] = $searchToken;
+															echo base64_encode($searchToken);
+															?>"> </option>
+								</select>
+							</div> <!--col-12 col-lg-6 -->
 
-									</div><!-- section-tagline -->
-									<h1 class="section-title">School Directory</h1>
-									<p> It serves as a valuable resource for users, allowing them to easily access school
-										contact details, other relevant information. </p>
-								</div><!-- contact-box -->
-							</div><!-- col-lg-4 -->
-							<div class="col-lg-8">
-								<form action="./app/directory.php" class="contact-form" method="post">
-									<div class="row row-gutter-10">
-										<div class="col-12 col-lg-6">
-											<label>Select Country</label>
-											<select type="text" class="input-text" id="country_type" required="yes" onchange="select_region_type();">
-												<option value="">select</option>
-												<?php
-												$option = $model->select_all('country_tbl');
-												foreach ($option as $data) {
-													echo '<option value="' . $data['country_id'] . '">' . $data['country'] . '</option>';
-												}
-												?>
-											</select>
-										</div> <!--col-12 col-lg-6 -->
-										<div class="col-12 col-lg-6">
-											<label>Select Region</label>
-											<select type="text" class="input-text" id="region_type" onchange="select_state_type();" required="yes">
-												<option value="">select</option>
-											</select>
-										</div> <!--col-12 col-lg-6 -->
-										<div class="col-12 col-lg-6">
-											<label>Select State</label>
-											<select type="text" class="input-text" placeholder="State" id="state_type" required="yes" onchange="select_lga_type();" aria-required="true">
-											</select>
-										</div> <!--col-12 col-lg-6 -->
-										<div class="col-12 col-lg-6">
-											<label>Select LGA</label>
-											<select type="text" class="input-text" placeholder="State" name="lga_type" required="yes" id="lga_type" aria-required="true">
-											</select>
-										</div> <!--col-12 col-lg-6 -->
-										<div class="col-12 col-lg-6" hidden>
-											<select type="text" class="input-text" name="searchToken" aria-required="true">
-												<option selected value="<?php
-																		$searchToken = $utility->generateRandomDigits(14);
-																		$_SESSION['searchToken'] = $searchToken;
-																		echo base64_encode($searchToken);
-																		?>"> </option>
-											</select>
-										</div> <!--col-12 col-lg-6 -->
-
-										<div class="col-12 col-lg-12 offset-4">
-											<button type="submit" name="searchSchools" class="btn btn-primary">Search School</button>
-										</div><!-- col-12 col-lg-12 -->
-									</div><!-- row -->
-								</form><!-- contact-form -->
-							</div><!-- col-lg-8 -->
+							<div class="col-12 col-lg-12 offset-4 col-md-12 offset-4 ">
+								<button type="submit" name="searchSchools" class="btn btn-primary">Search School</button>
+							</div><!-- col-12 col-lg-12 -->
 						</div><!-- row -->
-					</div><!-- container -->
-				</section><!-- contact-section -->
-
+					</form><!-- contact-form -->
+				</div><!-- col-lg-8 -->
 			</div><!-- row -->
 		</div><!-- container -->
-	</section><!--about-section-->
+	</section><!-- contact-section -->
 	<section class="service-section">
 		<div class="container">
 			<div class="row justify-content-between">
@@ -598,33 +595,7 @@ include "./include/header.php"
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- blog-section -->
-	<section class="cta-two-section">
-		<div class="container">
-			<div class="cta-two-section-inner">
-				<div class="row">
-					<div class="col-xl-5">
-						<div class="cta-two-title">
-							<div class="cta-two-card-icon">
-								<i class="flaticon-envelope-2"></i>
-							</div><!-- cta-two-card-icon -->
-							<div class="cta-two-card-content">
-								<p>Stay Connected</p>
-								<h3>Join Our Newsletter</h3>
-							</div><!-- cta-two-card-content -->
-						</div><!--cta-two-title-->
-					</div><!--col-xl-5-->
-					<div class="col-xl-7">
-						<form action="assets/inc/sendemail.php" class="cta-two-form" method="post">
-							<div class="cta-two-form-group">
-								<input type="email" id="email" class="input-text" placeholder="Email address" name="email" required>
-							</div><!-- cta-two-card-form -->
-							<button class="btn btn-primary">Subscribe</button>
-						</form><!-- cta-two-form -->
-					</div><!-- col-xl-7-->
-				</div><!-- row -->
-			</div><!-- cta-two-section-inner -->
-		</div><!-- container -->
-	</section><!--cta-two-section-->
+	
 </div><!--page-wrapper-->
 
 <?php

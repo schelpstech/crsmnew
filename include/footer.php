@@ -1,3 +1,30 @@
+<section class="funfact-section">
+		<div class="container">
+			<div class="cta-two-section-inner">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="cta-two-title">
+							<div class="cta-two-card-icon">
+								<i class="flaticon-envelope-2"></i>
+							</div><!-- cta-two-card-icon -->
+							<div class="cta-two-card-content">
+								<p>Stay Connected</p>
+								<h3>Check out the latest post on CRSM Blog</h3>
+							</div><!-- cta-two-card-content -->
+						</div><!--cta-two-title-->
+					</div><!--col-xl-5-->
+					<div class="col-lg-3">
+						<form  class="cta-two-form">
+							<div class="cta-two-form-group">
+								
+							</div><!-- cta-two-card-form -->
+							<a href="https://press.crsm.ng" class="btn btn-primary">Go to CRSM Blog</a>
+						</form><!-- cta-two-form -->
+					</div><!-- col-xl-7-->
+				</div><!-- row -->
+			</div><!-- cta-two-section-inner -->
+		</div><!-- container -->
+	</section><!--cta-two-section-->
 <section class="footer">
     <div class="footer-inner">
         <div class="container">
@@ -7,7 +34,7 @@
                         <a href="index.php"><img src="./assets/image/logo/crsmlogo.png"  class="img-fluid" alt="img-25" style="width: 600px; height:50px;" ></a>
                     </div><!-- footer-widget-logo -->
                     <div class="footer-widget-text">
-                        <p>Christ the Redeemer’s school management</p>
+                        <p>CRSM establishes, manages, supports and controls all RCCG Nursery, Primary and Secondary schools.</p>
                     </div><!-- footer-widget-text -->
                     <div class="footer-widget-socials">
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -73,7 +100,7 @@
     </div><!--footer-inner-->
     <div class="bottom-footer">
         <div class="conatiner">
-            <p>© Copyright 2023 by schelps.com.ng</p>
+            <p>© Copyright CRSM 2023 :: developed by schelps.com.ng</p>
         </div><!-- container -->
     </div><!--bottom-footer-->
 </section><!--footer-->

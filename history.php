@@ -7,7 +7,7 @@
 			<div class="section-box text-center">
 				<h2 class="section-title">CRSM Brief history</h2>
 				<div class="section-text">
-					<p>CRSM establishes, manages, supports and controlls all RCCG nursery, primary and secondary schools across the country.</p>
+					<p>CRSM establishes, manages, supports and controls all RCCG Nursery, Primary and Secondary schools.</p>
 				</div><!-- section-text -->
 			</div><!-- section-box -->
 			<div class="history-card">

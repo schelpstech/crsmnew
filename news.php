@@ -1,6 +1,7 @@
 <?php
 include "./include/header.php"
-    ?>
+?>
+
 <head>
     <style>
         /* Styling the body */
@@ -8,17 +9,18 @@ include "./include/header.php"
             margin: 0;
             padding: 0;
         }
+
         /* Styling section, giving background
             image and dimensions */
         section {
             width: 100%;
             height: 100vh;
             background:
-                url(
-'./assets/image/events/images_2.png'
+                url('./assets/image/events/images_2.png'
                 );
             background-size: cover;
         }
+
         /* Styling the left floating section */
         section .leftBox {
             width: 50%;
@@ -27,6 +29,7 @@ include "./include/header.php"
             padding: 50px;
             box-sizing: border-box;
         }
+
         /* Styling the background of
             left floating section */
         section .leftBox .content {
@@ -35,11 +38,13 @@ include "./include/header.php"
             padding: 40px;
             transition: .5s;
         }
+
         /* Styling the hover effect 
             of left floating section */
         section .leftBox .content:hover {
             background: wheat;
         }
+
         /* Styling the header of left
             floating section */
         section .leftBox .content h1 {
@@ -48,12 +53,14 @@ include "./include/header.php"
             font-size: 50px;
             text-transform: uppercase;
         }
+
         /* Styling the paragraph of
             left floating section */
         section .leftBox .content p {
             margin: 10px 0 0;
             padding: 0;
         }
+
         /* Styling the three events section */
         section .events {
             position: relative;
@@ -63,6 +70,7 @@ include "./include/header.php"
             float: right;
             box-sizing: border-box;
         }
+
         /* Styling the links of
         the events section */
         section .events ul {
@@ -73,6 +81,7 @@ include "./include/header.php"
             padding: 40px;
             box-sizing: border-box;
         }
+
         /* Styling the lists of the event section */
         section .events ul li {
             list-style: none;
@@ -81,6 +90,7 @@ include "./include/header.php"
             height: 200px;
             margin: 15px 0;
         }
+
         /* Styling the time class of events section */
         section .events ul li .time {
             position: relative;
@@ -93,11 +103,13 @@ include "./include/header.php"
             text-align: center;
             transition: .5s;
         }
+
         /* Styling the hover effect
             of events section */
         section .events ul li:hover .time {
             background: wheat;
         }
+
         /* Styling the header of time
             class of events section */
         section .events ul li .time h2 {
@@ -111,12 +123,13 @@ include "./include/header.php"
             font-size: 60px;
             line-height: 30px;
         }
+
         /* Styling the texts of time
         class of events section */
         section .events ul li .time h2 span {
             font-size: 30px;
         }
- 
+
         /* Styling the details
         class of events section */
         section .events ul li .details {
@@ -127,6 +140,7 @@ include "./include/header.php"
             height: 100%;
             float: left;
         }
+
         /* Styling the header of the
         details class of events section */
         section .events ul li .details h3 {
@@ -135,6 +149,7 @@ include "./include/header.php"
             padding: 0;
             font-size: 22px;
         }
+
         /* Styling the lists of details
         class of events section */
         section .events ul li .details p {
@@ -143,6 +158,7 @@ include "./include/header.php"
             padding: 0;
             font-size: 16px;
         }
+
         /* Styling the links of details
         class of events section */
         section .events ul li .details a {
@@ -154,6 +170,7 @@ include "./include/header.php"
             font-size: 18px;
             transition: .5s;
         }
+
         /* Styling the details class's hover effect */
         section .events ul li .details a:hover {
             background: darkgreen;
@@ -162,21 +179,22 @@ include "./include/header.php"
         }
     </style>
 </head>
+
 <body>
     <section>
         <div class="leftBox">
             <div class="content">
                 <h1>
-                   CRSM News & Events
+                    CRSM News & Events
                 </h1>
                 <p>
-                Welcome to our school's vibrant CRSM hub of news and events, where we keep you connected to all the exciting happenings within our educational community. Here, you'll find a treasure trove of information that spans from breaking news to upcoming events that showcase our students' talents, our teachers' dedication, and our commitment to fostering a dynamic learning environment.
-</p>
+                    Welcome to our school's vibrant CRSM hub of news and events, where we keep you connected to all the exciting happenings within our educational community. Here, you'll find a treasure trove of information that spans from breaking news to upcoming events that showcase our students' talents, our teachers' dedication, and our commitment to fostering a dynamic learning environment.
+                </p>
 
 
             </div>
         </div>
-        
+
         <div class="events">
             <ul>
                 <li>
@@ -204,7 +222,7 @@ include "./include/header.php"
                     </div>
                     <div class="details">
                         <h3>
-                            Vacation 
+                            Vacation
                         </h3>
                         <p>
                             Closing date
@@ -233,7 +251,7 @@ include "./include/header.php"
             </ul>
         </div>
     </section>
-    </body>
+</body>
 <?php
 include "./include/footer.php"
-    ?>
+?>

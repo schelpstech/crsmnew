@@ -120,11 +120,10 @@ if (file_exists('../../model/query.php')) {
 							</ul><!-- list-unstyled -->
 						</li><!--has-dropdown-->
 						<li class="has-dropdown">
-							<a href="#">Media</a>
+							<a href="https://press.crsm.ng/">Media</a>
 							<ul class="list-unstyled">
-								<li><a href="news.php">News & Events</a></li>
-								<li><a href="gallery.php">Gallery</a></li>
-								<li><a href="publication.php">Publication</a></li>
+								<li><a href="https://press.crsm.ng/category/crsm-insights">CRSM Blog</a></li>
+								<li><a href="https://press.crsm.ng/category/crsm-events">News & Events</a></li>
 							</ul><!-- list-unstyled -->
 						</li><!--has-dropdown-->
 						<li><a href="contact.php">Contact</a>
