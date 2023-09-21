@@ -79,7 +79,7 @@ if (file_exists('../../model/query.php')) {
 			</div><!-- topbar-left -->
 			<div class="topbar-right">
 				<ul>
-					<li><a href="https://app.crsm.ng">Portal</a></li>
+					<li><a href="https://portal.crsm.ng/">Portal</a></li>
 					<li><a href="https://mailapp.crsm.ng">Staff Mail</a></li>
 					<li><a href="https://portal.crsm.ng/manager">Admin</a></li>
 				</ul><!-- ul -->
@@ -142,7 +142,7 @@ if (file_exists('../../model/query.php')) {
 				</div><!-- mobile-menu-button -->
 				
 				<div class="main-menu-right-button">
-					<a href="contact.html" class="btn btn-primary">Report Issue</a>
+					<a href="#" class="btn btn-primary">Report Issue</a>
 				</div><!-- main-menu-right-button -->
 			</div><!--main-menu-right-->
 		</div><!--main-menu-inner-->
